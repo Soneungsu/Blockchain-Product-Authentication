@@ -1,0 +1,60 @@
+{
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node .claude/hooks/statusline.js",
+    "refreshInterval": 5
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/sessionstart-inject.js",
+            "timeout": 10,
+            "statusMessage": "이전 세션 컨텍스트 확인 중..."
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/precompact-backup.js",
+            "timeout": 15,
+            "statusMessage": "압축 전 원본 로그 백업 중..."
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/postcompact-save-summary.js",
+            "timeout": 15,
+            "statusMessage": "압축 요약 저장 중..."
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/sessionend-checkpoint.js",
+            "timeout": 15,
+            "statusMessage": "세션 체크포인트 저장 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
