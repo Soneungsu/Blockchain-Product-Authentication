@@ -1,13 +1,13 @@
 {
-  "session_id": "df6f1939-7be6-445a-aa98-22816524ea05",
-  "transcript_path": "C:\\Users\\Administrator\\.claude\\projects\\C--Users-Administrator-Desktop-Blockchain-Product-Authentication\\df6f1939-7be6-445a-aa98-22816524ea05.jsonl",
+  "session_id": "86765d0f-25bd-423a-a001-2cac3c916ec5",
+  "transcript_path": "C:\\Users\\Administrator\\.claude\\projects\\C--Users-Administrator-Desktop-Blockchain-Product-Authentication\\86765d0f-25bd-423a-a001-2cac3c916ec5.jsonl",
   "cwd": "C:\\Users\\Administrator\\Desktop\\Blockchain-Product-Authentication",
-  "scratchpad_dir": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\claude\\C--Users-Administrator-Desktop-Blockchain-Product-Authentication\\df6f1939-7be6-445a-aa98-22816524ea05\\scratchpad",
-  "prompt_id": "44fc8f59-7490-4897-8c22-549339459b0d",
+  "scratchpad_dir": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\claude\\C--Users-Administrator-Desktop-Blockchain-Product-Authentication\\86765d0f-25bd-423a-a001-2cac3c916ec5\\scratchpad",
+  "prompt_id": "c26c4d1a-e52a-454f-a3ab-26e7abc7950a",
   "effort": {
     "level": "high"
   },
-  "session_name": "Handoff 읽고 재개",
+  "session_name": "03 사업 범위 MD 파일 수정",
   "model": {
     "id": "claude-sonnet-5",
     "display_name": "Sonnet 5"
@@ -27,53 +27,41 @@
     "name": "default"
   },
   "cost": {
-    "total_cost_usd": 7.028601999999999,
-    "total_duration_ms": 5936718,
-    "total_api_duration_ms": 1597437,
-    "total_lines_added": 981,
-    "total_lines_removed": 2
+    "total_cost_usd": 2.4601031999999994,
+    "total_duration_ms": 2504975,
+    "total_api_duration_ms": 622057,
+    "total_lines_added": 275,
+    "total_lines_removed": 65
   },
   "context_window": {
-    "total_input_tokens": 367714,
-    "total_output_tokens": 616,
+    "total_input_tokens": 203123,
+    "total_output_tokens": 963,
     "context_window_size": 1000000,
     "current_usage": {
       "input_tokens": 2,
-      "output_tokens": 616,
-      "cache_creation_input_tokens": 4044,
-      "cache_read_input_tokens": 363668
+      "output_tokens": 963,
+      "cache_creation_input_tokens": 3545,
+      "cache_read_input_tokens": 199576
     },
-    "used_percentage": 37,
-    "remaining_percentage": 63
+    "used_percentage": 20,
+    "remaining_percentage": 80
   },
   "exceeds_200k_tokens": true,
   "prompt_cache": {
     "warm": true,
     "caching_observed": true,
     "ttl": "1h",
-    "expires_at": 1790425256,
-    "requests": 73,
-    "misses": 1,
+    "expires_at": 1790427852,
+    "requests": 36,
+    "misses": 0,
     "expected_rebuilds": 0,
-    "hit_ratio": 0.9774869255763764,
-    "cache_write_tokens": 374117,
-    "miss_recache_tokens": 53483,
-    "last_miss_at": 1790417387,
-    "last_miss_cause": {
-      "causes": [
-        "model_changed",
-        "betas_changed",
-        "effort_changed",
-        "messages_rewritten"
-      ]
-    },
-    "miss_causes": {
-      "model_changed": 1,
-      "betas_changed": 1,
-      "effort_changed": 1,
-      "messages_rewritten": 1
-    },
-    "recache_tokens_if_cold": 367714
+    "hit_ratio": 0.9608779342636999,
+    "cache_write_tokens": 170773,
+    "miss_recache_tokens": 0,
+    "last_miss_at": null,
+    "last_miss_cause": null,
+    "miss_causes": {},
+    "recache_tokens_if_cold": 203123
   },
   "fast_mode": false,
   "thinking": {
@@ -81,11 +69,11 @@
   },
   "rate_limits": {
     "five_hour": {
-      "used_percentage": 19,
+      "used_percentage": 26,
       "resets_at": 1790433600
     },
     "seven_day": {
-      "used_percentage": 10,
+      "used_percentage": 11,
       "resets_at": 1790762400
     }
   }
